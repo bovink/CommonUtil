@@ -9,6 +9,9 @@ import android.content.Context;
  * @since 2016/6/15
  */
 public class DisplayUtil {
+    private DisplayUtil() {
+        throw new UnsupportedOperationException("cannot be instantiated");
+    }
 
     public static int pxToDp(Context context, float px) {
         float scale = context.getResources().getDisplayMetrics().density;
