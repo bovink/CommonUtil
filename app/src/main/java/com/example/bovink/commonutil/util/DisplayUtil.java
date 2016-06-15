@@ -4,6 +4,9 @@ import android.content.Context;
 
 /**
  * dp、sp 转换为 px 的工具类
+ *
+ * @author bovink
+ * @since 2016/6/15
  */
 public class DisplayUtil {
 
