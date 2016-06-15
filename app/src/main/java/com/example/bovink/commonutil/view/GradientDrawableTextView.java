@@ -229,6 +229,9 @@ public class GradientDrawableTextView extends TextView implements View.OnTouchLi
      */
     public void setTouchLum(int lum) {
         touchLum = lum;
+        if (lum < 0 || lum > 100) {
+            throw new IllegalArgumentException("lum can not be < 0 or > 100");
+        }
     }
 
     /**
