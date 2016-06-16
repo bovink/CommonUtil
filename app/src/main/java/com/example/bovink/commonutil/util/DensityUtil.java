@@ -8,8 +8,8 @@ import android.content.Context;
  * @author bovink
  * @since 2016/6/15
  */
-public class DisplayUtil {
-    private DisplayUtil() {
+public class DensityUtil {
+    private DensityUtil() {
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 
