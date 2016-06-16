@@ -21,8 +21,9 @@ public class ToastUtil {
 
     /**
      * 短时间显示Toast，duration为Toast.LENGTH_SHORT
+     *
      * @param context context
-     * @param text text
+     * @param text    text
      */
     public static void showShort(Context context, CharSequence text) {
         if (isShow) {
@@ -32,8 +33,9 @@ public class ToastUtil {
 
     /**
      * 短时间显示Toast，duration为Toast.LENGTH_SHORT
+     *
      * @param context context
-     * @param resId 字符串资源Id
+     * @param resId   字符串资源Id
      */
     public static void showShort(Context context, int resId) {
         if (isShow) {
@@ -43,8 +45,9 @@ public class ToastUtil {
 
     /**
      * 长时间显示Toast，duration为Toast.LENGTH_LONG
+     *
      * @param context context
-     * @param text text
+     * @param text    text
      */
     public static void showLong(Context context, CharSequence text) {
         if (isShow) {
@@ -54,36 +57,13 @@ public class ToastUtil {
 
     /**
      * 长时间显示Toast，duration为Toast.LENGTH_LONG
+     *
      * @param context context
-     * @param resId 字符串资源Id
+     * @param resId   字符串资源Id
      */
     public static void showLong(Context context, int resId) {
         if (isShow) {
             Toast.makeText(context, resId, Toast.LENGTH_LONG).show();
-        }
-    }
-
-    /**
-     * 显示Toast，自定义显示时间
-     * @param context context
-     * @param text text
-     * @param duration 显示时间
-     */
-    public static void show(Context context, CharSequence text, int duration) {
-        if (isShow) {
-            Toast.makeText(context, text, duration).show();
-        }
-    }
-
-    /**
-     * 显示Toast，自定义显示时间
-     * @param context context
-     * @param resId resId
-     * @param duration 显示时间
-     */
-    public static void show(Context context, int resId, int duration) {
-        if (isShow) {
-            Toast.makeText(context, resId, duration).show();
         }
     }
 }
