@@ -13,4 +13,17 @@
         <attr name="gdtv_strokeDashGap" format="dimension" />
         <attr name="gdtv_solidColor" format="color" />
     </declare-styleable>
+
+    <declare-styleable name="GradientLinearLayout">
+        <attr name="gdll_cornerTopLeftRadius" format="dimension" />
+        <attr name="gdll_cornerTopRightRadius" format="dimension" />
+        <attr name="gdll_cornerBottomLeftRadius" format="dimension" />
+        <attr name="gdll_cornerBottomRightRadius" format="dimension" />
+        <attr name="gdll_cornerRadius" format="dimension" />
+        <attr name="gdll_strokeWidth" format="dimension" />
+        <attr name="gdll_strokeColor" format="color" />
+        <attr name="gdll_strokeDashWidth" format="dimension" />
+        <attr name="gdll_strokeDashGap" format="dimension" />
+        <attr name="gdll_solidColor" format="color" />
+    </declare-styleable>
 </resources>
