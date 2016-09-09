@@ -270,6 +270,6 @@ public class GradientLinearLayout extends LinearLayout implements View.OnTouchLi
                 }));
                 break;
         }
-        return true;
+        return false;
     }
 }
