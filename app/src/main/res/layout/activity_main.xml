@@ -23,13 +23,13 @@
         <com.example.bovink.commonutil.view.GradientLinearLayout
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            app:gdll_cornerBottomLeftRadius="20dp"
-            app:gdll_cornerBottomRightRadius="0dp"
-            app:gdll_cornerTopLeftRadius="20dp"
-            app:gdll_cornerTopRightRadius="0dp"
-            app:gdll_strokeColor="#232326"
-            app:gdll_strokeWidth="1dp"
-            app:gdll_solidColor="#66ccff">
+            app:gl_cornerBottomLeftRadius="20dp"
+            app:gl_cornerBottomRightRadius="0dp"
+            app:gl_cornerTopLeftRadius="20dp"
+            app:gl_cornerTopRightRadius="0dp"
+            app:gl_strokeColor="#232326"
+            app:gl_strokeWidth="1dp"
+            app:gl_solidColor="#66ccff">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -38,23 +38,22 @@
                 android:text="我的订单" />
         </com.example.bovink.commonutil.view.GradientLinearLayout>
 
-        <com.example.bovink.commonutil.view.GradientLinearLayout
+        <com.example.bovink.commonutil.view.GradientRelativeLayout
             android:id="@+id/gll_myorder"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            app:gdll_cornerBottomLeftRadius="0dp"
-            app:gdll_cornerBottomRightRadius="20dp"
-            app:gdll_cornerTopLeftRadius="0dp"
-            app:gdll_cornerTopRightRadius="20dp"
-            app:gdll_strokeColor="#232326"
-            app:gdll_strokeWidth="1dp"
-            app:gdll_solidColor="#f27c14">
+            app:gl_cornerBottomLeftRadius="0dp"
+            app:gl_cornerBottomRightRadius="20dp"
+            app:gl_cornerTopLeftRadius="0dp"
+            app:gl_cornerTopRightRadius="20dp"
+            app:gl_strokeColor="#232326"
+            app:gl_strokeWidth="1dp"
+            app:gl_solidColor="#f27c14">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:text="我的订单" />
-        </com.example.bovink.commonutil.view.GradientLinearLayout>
+        </com.example.bovink.commonutil.view.GradientRelativeLayout>
     </LinearLayout>
 </FrameLayout>

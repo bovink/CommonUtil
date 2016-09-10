@@ -9,7 +9,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.bovink.commonutil.R;
 
@@ -17,9 +17,9 @@ import com.example.bovink.commonutil.R;
  * com.example.bovink.commonutil.view
  *
  * @author bovink
- * @since 2016/9/9
+ * @since 2016/9/10
  */
-public class GradientLinearLayout extends LinearLayout implements View.OnTouchListener{
+public class GradientRelativeLayout extends RelativeLayout implements View.OnTouchListener {
     /**
      * 默认触摸亮度
      */
@@ -38,7 +38,7 @@ public class GradientLinearLayout extends LinearLayout implements View.OnTouchLi
      *
      * @param context 环境
      */
-    public GradientLinearLayout(Context context) {
+    public GradientRelativeLayout(Context context) {
         super(context);
     }
 
@@ -48,7 +48,7 @@ public class GradientLinearLayout extends LinearLayout implements View.OnTouchLi
      * @param context 环境
      * @param attrs   XML属性集合
      */
-    public GradientLinearLayout(Context context, AttributeSet attrs) {
+    public GradientRelativeLayout(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
@@ -59,7 +59,7 @@ public class GradientLinearLayout extends LinearLayout implements View.OnTouchLi
      * @param attrs        XML属性集合
      * @param defStyleAttr 一个决定默认值的参数
      */
-    public GradientLinearLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public GradientRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         TypedArray a = context.obtainStyledAttributes(attrs,
