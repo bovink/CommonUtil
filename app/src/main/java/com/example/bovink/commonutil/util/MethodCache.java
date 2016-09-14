@@ -40,6 +40,8 @@ public class MethodCache {
                                     0, 0, 0, 1, 0
                             }));
                             break;
+                        // 故意这样写，让ACTION_CANCEL执行和ACTION_UP一样的代码
+                        case MotionEvent.ACTION_CANCEL:
                         case MotionEvent.ACTION_UP:
                             v.getBackground().setColorFilter(new ColorMatrixColorFilter(new float[]{
                                     1, 0, 0, 0, 0,
