@@ -1,23 +1,25 @@
 package com.example.bovink.commonutil;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.bovink.commonutil.view.GradientLinearLayout;
+import com.example.bovink.commonutil.util.MethodCache;
+import com.example.bovink.commonutil.view.GradientRelativeLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GradientLinearLayout gradientLinearLayout = (GradientLinearLayout) findViewById(R.id.gll_myorder);
+        GradientRelativeLayout gradientLinearLayout = (GradientRelativeLayout) findViewById(R.id.gll_myorder);
         gradientLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 System.out.println("click");
+                MethodCache.screenshot(MainActivity.this);
             }
         });
     }
